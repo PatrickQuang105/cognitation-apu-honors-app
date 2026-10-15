@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commonplace Book | Cogitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="main.html" class="logo"> <!--Link back to home page when clicked.-->
+            <img
+                src="azusa-pacific-university-logo-png-transparent.png"
+                alt="Azusa Pacific University Logo"
+                class="apu-logo"> <!--Link to the CSS class for the logo-->
+        </a>
+
+        <a class="brand" href="main.html">
+            <span class="brand-name">Cogitation</span>
+            <span class="brand-subtitle">APU Honors Reading Collections</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="main.html">Book Library</a>
+            <a href="#">My Work</a>
+            <a class="active" href="commonplace.html">CP Book Builder</a>
+        </nav>
+    </header>
+
+    <main class="cp-page">
+        <h1>Commonplace Book Builder</h1>
+        <p>Type in the needed information to generate your Commonplace Book</p>
+        <p>
+            Fields marked <span class="required-mark" aria-hidden="true">*</span> are required.
+            Include annotations for at least two quotations.
+        </p>
+        <form class="cp_form">
+            <div class="form-field">
+                <label for="name">Student name <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+            </div>
+
+            <div class="form-field">
+                <label for="book-title">Book title <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="book-title"
+                    name="book-title"
+                    required
+                >
+            </div>
+
+            <div class="form-field">
+                <label for="course">Course <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="course"
+                    name="course"
+                    required
+                >
+            </div>
+
+            <div class="form-field">
+                <label for="author">Author <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="author"
+                    name="author"
+                    required
+                >
+            </div>
+
+            <div class="form-field">
+                <label for="citation">Book citation <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                    type="text"
+                    id="citation"
+                    name="citation"
+                    required
+                >
+            </div>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 1</legend>
+
+                <div class="form-field">
+                    <label for="quote-1">Quotation 1 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-1"
+                        name="quote-1"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-1">Annotation 1</label>
+                    <textarea
+                        id="annotation-1"
+                        name="annotation-1"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 2</legend>
+
+                <div class="form-field">
+                    <label for="quote-2">Quotation 2 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-2"
+                        name="quote-2"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-2">Annotation 2</label>
+                    <textarea
+                        id="annotation-2"
+                        name="annotation-2"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 3</legend>
+
+                <div class="form-field">
+                    <label for="quote-3">Quotation 3 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-3"
+                        name="quote-3"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-3">Annotation 3</label>
+                    <textarea
+                        id="annotation-3"
+                        name="annotation-3"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 4</legend>
+
+                <div class="form-field">
+                    <label for="quote-4">Quotation 4 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-4"
+                        name="quote-4"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-4">Annotation 4</label>
+                    <textarea
+                        id="annotation-4"
+                        name="annotation-4"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 5</legend>
+
+                <div class="form-field">
+                    <label for="quote-5">Quotation 5 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-5"
+                        name="quote-5"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-5">Annotation 5</label>
+                    <textarea
+                        id="annotation-5"
+                        name="annotation-5"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 6</legend>
+
+                <div class="form-field">
+                    <label for="quote-6">Quotation 6 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-6"
+                        name="quote-6"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-6">Annotation 6</label>
+                    <textarea
+                        id="annotation-6"
+                        name="annotation-6"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 7</legend>
+
+                <div class="form-field">
+                    <label for="quote-7">Quotation 7 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-7"
+                        name="quote-7"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-7">Annotation 7</label>
+                    <textarea
+                        id="annotation-7"
+                        name="annotation-7"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 8</legend>
+
+                <div class="form-field">
+                    <label for="quote-8">Quotation 8 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-8"
+                        name="quote-8"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-8">Annotation 8</label>
+                    <textarea
+                        id="annotation-8"
+                        name="annotation-8"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 9</legend>
+
+                <div class="form-field">
+                    <label for="quote-9">Quotation 9 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-9"
+                        name="quote-9"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-9">Annotation 9</label>
+                    <textarea
+                        id="annotation-9"
+                        name="annotation-9"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="cp-entry">
+                <legend>Entry 10</legend>
+
+                <div class="form-field">
+                    <label for="quote-10">Quotation 10 (please include reference at the end) <span class="required-mark" aria-hidden="true">*</span></label>
+                    <textarea
+                        id="quote-10"
+                        name="quote-10"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="annotation-10">Annotation 10</label>
+                    <textarea
+                        id="annotation-10"
+                        name="annotation-10"
+                        class="annotation-input"
+                        rows="3"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <p id="annotation-error" class="form-error" role="alert"></p>
+
+            <button type="button" id="add-quote" disabled>
+                Add another quote
+            </button>
+            <button type="submit" disabled>
+                Generate CP Book
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>

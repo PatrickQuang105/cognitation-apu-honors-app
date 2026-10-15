@@ -1,0 +1,124 @@
+body {
+    background-color: #faf9f5;
+    color: #292b29;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /*Let me control spacing to liking*/
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 28px 5%; /*Add interior space*/
+    border-bottom: 1px solid #e4e1d9; /*Create small divider below header*/
+}
+
+.apu-logo {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.brand {
+    text-decoration: none; /*Remove underlined link*/
+    color: #812b38;
+    text-align: center;
+}
+
+.brand-name {
+    display: block;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 36px;
+}
+
+.brand-subtitle {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    justify-self: end; /*Put the navigation on the right*/
+}
+
+nav a {
+    color: #73736c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a.active {
+    color: #812b38;
+    border-bottom: 2px solid #812b38;
+    padding-bottom: 8px;
+}
+
+.required-mark { /*Make required mark red*/
+    color: #b42332;
+}
+
+.cp-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.cp-page h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color:#812b38;
+    margin-bottom: 12px;
+}
+
+.cp-page >p {
+    color:#73736c;
+    line-height: 1.6;
+}
+
+.cp_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cp_form input,
+.cp_form textarea { /*Styling the input area to make it look nicer.*/
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d6d0c7;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #292b29;
+    font: inherit;
+    line-height:1.5;
+}
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+.cp-entry {
+    min-width: 0;
+    margin: 0 0 28px;
+    padding: 24px;
+    border: 1px solid #d6d0c7;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.cp-entry legend {
+    padding: 0 8px;
+    color: #812b38;
+    font-weight: bold;
+}
+
+.cp-entry .form-field:last-child {
+    margin-bottom: 0;
+}
